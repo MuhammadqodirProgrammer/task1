@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="form">
+        <!-- Name -->
+        <div class="form_control">
+          <label for="name">Ism</label>
+          <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required />
+        </div>
+        <!-- Birthdate -->
+        <div class="form_control">
+          <label for="birthdate">Tug'ilgan kun</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+        <!-- Region -->
+        <div class="form_control">
+          <label for="region">Viloyat</label>
+          <select id="region" name="region" onchange="handleSelectChange()" required>
+            <option value="" selected disabled>Viloyatni tanlang</option>
+          </select>
+        </div>
+        <!-- District -->
+        <div class="form_control">
+          <label for="district">Tuman</label>
+          <select id="district" name="district" required>
+            <option value="Tumanni tanlang" selected disabled>
+              Tumanni tanlang
+            </option>
+          </select>
+        </div>
+        <!-- Gender -->
+        <div class="form_control">
+          <!-- <label for="gender">Jins</label> -->
+          <h4>Jins</h4>
+          <div class="gender_list">
+            <div class="flexer_list">
+              <input type="radio" id="male" name="gender" class="gender" value="male" required />
+              <label for="male">Erkak</label>
+            </div>
+            <div class="flexer_list">
+              <input type="radio" id="female" name="gender" class="gender" value="female" />
+              <label for="female">Ayol</label>
+            </div>
+          </div>
+        </div>
+        <!-- Interests -->
+        <div class="form_control">
+          <label for="interests">Qiziqishlar</label>
+          <div class="flexer_list">
+            <input type="checkbox" id="sports" name="interests" class="interests" value="sports" />
+            <label for="sports">Sport</label>
+          </div>
+          <div class="flexer_list">
+            <input type="checkbox" id="music" name="interests" class="interests" value="music" />
+            <label for="music">Musiqa tinglash</label>
+          </div>
+          <div class="flexer_list">
+            <input type="checkbox" id="reading" name="interests" class="interests" value="reading" />
+            <label for="reading">Kitob O'qish</label>
+          </div>
+        </div>
+        <!-- Submit -->
+        <button>Yuborish</button>
+      </form>
+      <!-- Modal -->
+      <div class="owerlay">
+        <div class="modal_body">
+          <h4>Sizning malumotlarinzig to'grimi?</h4>
+          <div class="user_data"></div>
+          <div class="flexer_list modal_btns">
+            <button class="modal_send_btn">Ha, To'g'ri Yuborish</button>
+            <button class="modal_edit_btn">Yo'q, Tahrirlash</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+
+</html>

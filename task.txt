@@ -1,0 +1,6 @@
+Dinamik forma chizish dasturini yaratish.
+Konfiguratsiyani masalan json fayl ko’rinishida saqlash mumkin. 
+Kamida 4-5 ta kontrollardan foydalanish imkoni bo’lishi kerak.
+Bular textbox, datepicker, select-list, radio-button, checkbox va h.k bo’lishi mumkin.
+Bir biriga bog’liq select-list kontroli ham konfiguratsiyasini kiritish imkoni bo’lishi kerak. 
+Masalan “viloyatlar” select-listtidan qaysidir viloyat tanlangan vaqt, “tumanlar” select-list tida tanlangan viloyatlarning tumanlari ko’rinishi kerakligini konfiguratsiyaga chiqarish.
